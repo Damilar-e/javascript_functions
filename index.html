@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript functions</title>
+</head>
+<body>
+    <h2 id="arith"></h2>
+    <p>The sum of my numbers is = <b id="sum"></b></p>
+    <p>The subtraction of my numbers is = <b id="minus"></b></p>
+    <p>The division of my numbers is = <b id="div"></b></p>
+    <p>The multiplcation of my numbers is = <b id="mult"></b></p>
+    <p>The modulus of my numbers is = <b id="mod"></b></p>
+
+    <style>
+        h2{
+            text-align: center;
+        }
+
+        p{
+            font-weight: 600;
+        }
+    </style>
+
+    <script>
+        document.getElementById('arith').innerHTML = "Arithmetic Operators Using Javascript Funtions"
+
+        function sum(a,b){
+           let c = a + b
+           return c
+        }
+        console.log(sum(10,10))
+        document.getElementById('sum').innerHTML = sum(100, 200)
+
+        function minus(c,d){
+            let e = c - d
+            return e 
+        }
+        console.log(minus(40,10))
+        document.getElementById('minus').innerHTML = minus(302, 200)
+
+        function div(e ,f){
+            let g = e / f
+            return g
+        }
+        console.log(div(60,20))
+        document.getElementById('div').innerHTML = div(70, 15)
+
+        function mult(g,h){
+            let i = g * h
+            return i 
+        }
+        console.log(mult(20,5))
+        document.getElementById('mult').innerHTML = mult(10, 2)
+
+        function mod(i ,j){
+            let k = i % j
+            return k
+        }
+        console.log(mod(5,2))
+        document.getElementById('mod').innerHTML = mod(1, 8)
+
+    </script>
+</body>
+</html>
